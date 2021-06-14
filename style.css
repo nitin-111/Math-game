@@ -1,0 +1,219 @@
+html {
+    background-color: skyblue;
+}
+#container {
+    background-color: skyblue;
+}
+
+#score {
+    background-color: lightgreen;
+    padding: 13px;
+    font-size: 20px;
+    box-shadow: 0px 3px rgb(190, 110, 78);
+}
+
+#correct {
+    background-color: green;
+    color: white;
+    padding: 13px;
+    display: none;
+}
+
+#wrong {
+    background-color: red;
+    color: white;
+    padding: 13px;
+    display: none;
+}
+
+#question {
+    background-color: lightblue;
+    height: 11.25rem;
+    width: 55%;
+    margin: 1.5rem auto 1.5rem auto;
+    color: purple;
+    font-size: 110px;
+    font-family: cursive, sans-serif;
+    text-align: center;
+    box-shadow: 0px 4px #009de4;
+    line-height: 200px;
+    border-radius: 10px;
+}
+
+#instruction {
+    background-color: lightblue;
+    height: 10%;
+    width: 55%;
+    margin: 20px auto;
+    font-size: 30px;
+    color: grey;
+    line-height: 65px;
+    font-family: cursive, sans-serif;
+    text-align: center;
+    box-shadow: 0px 4px #009de4;
+    border-radius: 10px;
+}
+
+#options {
+    height: 7.5em;
+    margin: 0px 102px ;
+}
+.box {
+    background-color: white;
+    color: rgb(51, 117, 143);
+    border-radius: 10px;
+    box-shadow: 0px 4px #009de4;
+    margin-right: 5%;
+    margin-top: 1%;
+    text-align: center;
+    line-height: 110px;
+    font-size: 20px;
+    cursor: pointer;
+    transition-property: background-color, color;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+}
+
+.box:hover, #startreset:hover, .level:hover {
+    background-color: purple;
+    box-shadow: 0px 4px #009de4;
+    color: white;
+}
+
+.box:active, #startreset:active, .level:active{
+    box-shadow: 0px 0px #009de4;
+    top: 4px;
+}
+
+#startreset {
+    background-color: lightblue;
+    color: rgb(228, 8, 45);
+    border-radius: 5px;
+    width: 10%;
+    box-shadow: 0px 4px #009de4;
+    text-align: center;
+    line-height: 55px;
+    font-size: 20px;
+    margin-top: 0.5%;
+    cursor: pointer;
+    transition-property: background-color, color;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+}
+
+#time {
+    background-color: rgb(190, 218, 171);
+    color: rgb(33, 65, 172);
+    float: right;
+    line-height: 55px;
+    border-radius: 5px;
+    width: 25%;
+    box-shadow: 0px 4px #009de4;
+    margin: 1%;
+    text-align: center;
+    font-size: 17px;
+    cursor: pointer;
+    transform: all 0.3s;
+    transition-property: background-color, color;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;    
+    display: none;
+}
+
+#time:hover {
+    background-color: red;
+    color: white;
+}
+
+#gameover {
+    height: 4em;
+    width: 50%;
+    background: linear-gradient(rgb(148, 236, 148), rgb(190, 100, 100));
+    font-size: 60px;
+    font-family: cursive, sans-serif;
+    padding: 5px;
+    margin-top:-8.1em;
+    margin-left: 25%;
+    position: relative;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    display: none;
+}
+#difficulty{
+    height: 0px;
+    width: 300px;
+    margin: 0px 400px;
+    top: -480px;
+    left: 40px;
+    position: relative;
+    display: none;
+  }
+  
+  .level{
+    height: 150px;
+    width: 500px;
+    background-color: lightgreen;
+    color: white;
+    font-size: 55px;
+    margin-bottom: 25px;
+    position: relative;
+    font-family: cursive, sans-serif;
+    padding: 5px;
+    align-items: center;
+    border-radius: 15px;
+    line-height: 150px;
+    text-align: center;
+  }
+
+@media screen and (max-width:768px) {
+    #startreset {
+        line-height: 26px;
+    }
+    #time {
+        line-height: 20px;
+    }
+    #gameover {
+        height: 5em;
+        margin-top: -8.5em;
+}
+#difficulty {
+    margin: 0px 105px;
+}
+.level {
+    width: 200px;
+    line-height: 100px;
+    height: 100px;
+    font-size: 20px;
+}
+#question {
+    font-size: 55px;
+    line-height: 150px;
+}
+#gameover {
+    font-size: 30px;
+}
+}
+
+@media screen and (max-width:1024px) {
+    #startreset {
+        line-height: 26px;
+    }
+    #time {
+        line-height: 20px;
+    }
+    #gameover {
+        height: 5em;
+        margin-top: -8.5em;
+    }
+    #difficulty {
+        margin: 0px 230px;
+    }
+    .level {
+        width: 200px;
+        line-height: 100px;
+        height: 100px;
+        font-size: 20px;
+    }
+  
+}

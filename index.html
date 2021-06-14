@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Math Quiz</title>
+        <meta charset = "utf-8">
+        <meta name="viewport" content="witdth=device-width, initial-scale=1, user-scalability=yes">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12">
+                    <div class="d-flex justify-content-center">
+                        <div id="score" class="d-flex justify-content-center">
+                            Score: <span id="score-value">0</span>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex justify-content-around">
+                        <div id="correct">
+                            Correct!
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex justify-content-around">
+            <div id="wrong">
+                Try Again.
+            </div>
+            </div>
+
+            <div class="col-12">
+                <div id="question">
+                </div>                    
+            </div>
+            <div class="col-12">
+                <div id="instruction">
+                    Click on the correct answer.
+                </div>
+            </div>
+
+            <div class="row d-flex justify-content-around" id="options">
+                <div id="box1" class="border col-sm-2 box"></div>
+                <div id="box2" class="col-sm-2 box"></div>
+                <div id="box3" class="col-sm-2 box"></div>
+                <div id="box4" class="col-sm-2 box"></div>
+            </div>
+            <div class="d-flex justify-content-center">
+                <div id="startreset">
+                    Start Game
+                </div>
+            </div>
+            <div id="time">
+                Time Remaining: <span id="timeremaining">60</span> Seconds
+            </div>
+            <div style="height: 500px;">
+                <div id="gameover">
+                </div>   
+                    
+                        <div id="difficulty">
+                            <div id="level1" class="level">EASY</div>
+                            <div id="level2" class="level">INTERMEDIATE</div>
+                            <div id="level3" class="level">HARD</div>
+                        </div>  
+                    
+            </div>
+        </div>
+    </div>
+</div>
+        <script src="js.js"></script>
+    </body>
+</html>
